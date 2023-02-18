@@ -3,7 +3,7 @@ import * as SC from './Home.styled';
 export const Home = () => {
   return (
     <>
-      <SC.HomeTitle>Welcome to phone book application, pls LogIn or SignUp!</SC.HomeTitle>
+      <SC.HomeTitle>Welcome to phonebook application, pls LogIn or SignUp!</SC.HomeTitle>
     </>
   );
 };

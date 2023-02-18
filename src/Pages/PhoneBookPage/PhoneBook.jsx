@@ -1,5 +1,5 @@
 import { ContactList } from '../../components/ContactList/ContactList';
-import { Filter } from '../../components/Filter/Filter';
+import { Filter } from 'components/Filter/Filter';
 import { MaineTitle } from './PhoneBook.styled';
 
 export const PhoneBookPage = () => {
