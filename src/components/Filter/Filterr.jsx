@@ -5,7 +5,7 @@ import { filterContact, getFilter } from '../../Redux/contacts/filterSlice';
 import { AddContactButton } from 'components/AddContactButton/AddContactButton';
 import { FcSearch } from 'react-icons/fc';
 
-export const Filter = () => {
+export const Filterr = () => {
   const filterList = useSelector(getFilter);
   const dispatch = useDispatch();
   return (
