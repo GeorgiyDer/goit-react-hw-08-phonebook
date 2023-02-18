@@ -51,7 +51,7 @@ export const RegisterForm = () => {
       </SC.Wrapper>
 
       <SC.RegisterButton variant="contained" type="submit">
-        Register
+        SignUp
       </SC.RegisterButton>
     </SC.RegisterForm>
   );

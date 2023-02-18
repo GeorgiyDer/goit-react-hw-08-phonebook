@@ -1,8 +1,8 @@
 import * as SC from './AuthNav.styled';
 
 const navItems = [
-  { href: 'register', text: 'Register ' },
-  { href: 'logIn', text: 'Login ' },
+  { href: 'register', text: 'SignUp ' },
+  { href: 'logIn', text: 'LogIn ' },
 ];
 
 export const AuthNav = () => {

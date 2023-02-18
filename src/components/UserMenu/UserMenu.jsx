@@ -9,7 +9,7 @@ export const UserMenu = () => {
   const { user } = useAuth();
   return (
     <Box display="flex" alignItems="center">
-      <SC.WelcomeText>Welcome,{user?.name} </SC.WelcomeText>
+      <SC.WelcomeText>Welcome, {user?.name.toUpperCase()} </SC.WelcomeText>
       <SC.LogOutButton
         variant="contained"
         type="button"
