@@ -9,7 +9,6 @@ export const Filter = () => {
   const filterList = useSelector(getFilter);
   const dispatch = useDispatch();
   return (
-
     <Box
       display="flex"
       justifyContent="space-between"
