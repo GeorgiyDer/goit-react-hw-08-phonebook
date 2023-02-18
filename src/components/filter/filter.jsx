@@ -13,7 +13,6 @@ export const Filter = () => {
       display="flex"
       justifyContent="space-between"
       alignItems="center"
-      mb={3}
     >
       <Box display="flex" justifyContent="center" alignItems="center">
         <SC.Title>
