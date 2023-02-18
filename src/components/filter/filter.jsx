@@ -1,7 +1,7 @@
 import { useSelector, useDispatch } from 'react-redux';
+import * as SC from './Filter.styled';
 import { Box } from 'Utils/Box';
 import { filterContact, getFilter } from '../../Redux/contacts/filterSlice';
-import * as SC from './Filter.style';
 import { AddContactButton } from 'components/AddContactButton/AddContactButton';
 import { FcSearch } from 'react-icons/fc';
 
