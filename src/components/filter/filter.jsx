@@ -1,19 +1,34 @@
-import { useSelector, useDispatch } from 'react-redux'
-import { filterContact } from 'redax/contacts/filter.slice';
-import React from 'react'
-import { StyledLable, StyledInput } from './filter.styled'
+import { useSelector, useDispatch } from 'react-redux';
+import { Box } from 'Utils/Box';
+import { filterContact, getFilter } from '../../Redux/contacts/filterSlice';
+import * as SC from './Filter.styled';
+import { AddContactButton } from 'components/AddContactButton/AddContactButton';
+import { FcSearch } from 'react-icons/fc';
 
-
-const Filter = () => {
-    const dispatch = useDispatch();
-    const filter = useSelector(state => state.filter)
-
-    return (
-        <StyledLable>Find contacts by name
-            <StyledInput type="text" value={filter} onChange={(e) => dispatch(filterContact(e.target.value))} />
-        </StyledLable>
-    )
-}
-
-
-export default Filter;
+export const Filter = () => {
+  const filterList = useSelector(getFilter);
+  const dispatch = useDispatch();
+  return (
+    <Box
+      display="flex"
+      justifyContent="space-between"
+      alignItems="center"
+      mb={3}
+    >
+      <Box display="flex" justifyContent="center" alignItems="center">
+        <SC.Title>
+          <FcSearch size="24px" />
+        </SC.Title>
+        <SC.FindArea
+          type="text"
+          name="filter"
+          value={filterList}
+          autoComplete="off"
+          placeholder="Name"
+          onChange={evt => dispatch(filterContact(evt.target.value))}
+        />
+      </Box>
+      <AddContactButton />
+    </Box>
+  );
+};
